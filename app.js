@@ -13,8 +13,21 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 // create routes
-app.use(require('./routes/index'))
+app.use(require('./routes/index')) // home page, unprotected
 
+app.use(require('./routes/login')) // login page
+
+app.use(require('./routes/register')) // registration page
+
+app.use(require('./routes/user'))  // user homepage and plants
+
+app.use(require('./routes/new'))  // create plant for a user
+
+app.use(require('./routes/plant')) // view data for a plant
+
+app.use(require('./routes/api')) // post data for a plant to database, lookup data for plant
+
+app.use(require('./routes/404')) // error page 
 
 
 // Start Server
