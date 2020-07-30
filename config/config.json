@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "vyvyopvq",
+    "password": "ifVTruInUSDp_BQl05mHlrHUB7KFuprz",
+    "database": "vyvyopvq",
+    "host": "ruby.db.elephantsql.com",
+    "dialect": "postgres"
+  }
+}
