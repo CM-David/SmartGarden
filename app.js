@@ -27,7 +27,9 @@ app.use(require('./routes/plant')) // view data for a plant
 
 app.use(require('./routes/api')) // post data for a plant to database, lookup data for plant
 
-app.use(require('./routes/404')) // error page 
+app.use(require('./routes/404')) // error page
+
+app.use(require('./routes/aboutus')) // about us
 
 
 // Start Server
